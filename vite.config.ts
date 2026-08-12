@@ -5,4 +5,14 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'sdk.js',
+        assetFileNames: 'sdk.[ext]',
+        // This ensures everything is bundled into a single JS file
+        manualChunks: undefined,
+      }
+    }
+  }
 })
