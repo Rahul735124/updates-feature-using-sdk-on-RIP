@@ -157,17 +157,17 @@ export default function App() {
       {/* Floating Action Button (Toggle) */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="pointer-events-auto relative group flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-full shadow-[0_8px_30px_rgb(99,102,241,0.4)] hover:shadow-[0_8px_40px_rgb(99,102,241,0.6)] hover:scale-105 transition-all duration-300 border border-white/10"
+        className="pointer-events-auto relative group flex items-center justify-center w-20 h-20 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-full shadow-[0_8px_30px_rgb(99,102,241,0.4)] hover:shadow-[0_8px_40px_rgb(99,102,241,0.6)] hover:scale-105 transition-all duration-300 border border-white/10"
       >
         <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-10 transition-opacity" />
         
         {isOpen ? (
-          <X className="w-6 h-6 text-white relative z-10 animate-in spin-in-90 duration-200" />
+          <X className="w-9 h-9 text-white relative z-10 animate-in spin-in-90 duration-200" />
         ) : (
           <>
-            <Megaphone className="w-6 h-6 text-white relative z-10 animate-in zoom-in duration-200" fill="currentColor" />
-            <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-[#09090b] flex items-center justify-center animate-bounce">
-              <Sparkles className="w-2 h-2 text-white" />
+            <Megaphone className="w-9 h-9 text-white relative z-10 animate-in zoom-in duration-200" fill="currentColor" />
+            <div className="absolute -top-1 -right-1 w-6 h-6 bg-red-500 rounded-full border-2 border-[#09090b] flex items-center justify-center animate-bounce">
+              <Sparkles className="w-3 h-3 text-white" />
             </div>
           </>
         )}
